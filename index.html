@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+    <header>
+        <div class="container1">
+          <div><a href="index.html"><img class="logo" src="/9-2-2024/images.png"></a></div>
+          <nav class="navbar">
+            <ul class="menu">
+              <li><a href="#" class="pages">Add new book</a></li>
+              <li><a href="#" class="pages">Books list </a></li>
+              <li><a href="#" class="pages">Search for book</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- Body section -->
+      <div class="body">
+        <div class="container">
+          <div class="add-book-section box">
+                <h2>Add New Book</h2>
+                <input type="text" id="book-id" placeholder="Book ID">
+                <input type="text" id="book-title" placeholder="Book Title">
+                <input type="text" id="author-name" placeholder="Author Name">
+                <button onclick="addBook()">Add Book</button>
+            </div>
+            <div class="book-list-section box">
+              <div class="book-list-section box">
+                <h2>Book List</h2>
+                <table id="book-list">
+                    <thead>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Status</th> <!-- New column for borrow/return -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Book rows will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+            
+          
+            <div class="search-book-section box">
+                <h2>Search Book</h2>
+                <input type="text" id="search-input" placeholder="Enter Book Title">
+                <button onclick="searchBook()">Search</button>
+                
+            </div>
+            </div>
+</div>
+    <footer>
+        <!-- this is for the footer on website -->
+        <div class="footerContainer">
+          <div class="up">
+            <div class="ftr-logo">
+              <a href="index.html"><img class="logo" src="images.png"></a><span class="name">Avisoft Library</span>
+            </div>
+            <div class="ftr-nav">
+              <li class="nav-head"><b>Navigation</b></li>
+              <li><a href="#">Contact-us:+91 90009000909</a></li>
+            </div>
+            <div class="ftr-nav">
+              <li class="nav-head"><b>location</b></li>
+              <li><a href="#">Chennai-Himmat</a></li>
+            </div>
+          </div>
+        </div>
+      </footer>
+   
+</body>
+<script src="index.js"></script>
+</html>

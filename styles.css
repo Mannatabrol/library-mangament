@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url(https://e0.pxfuel.com/wallpapers/575/224/desktop-wallpaper-books-library-shelves-lighting-library-aesthetic.jpg)  
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:yellow;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-book-section,
+.book-list-section,
+.search-book-section {
+  margin-bottom: 20px;
+}
+
+.add-book-section input,
+.search-book-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.add-book-section button,
+.search-book-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-book-section button:hover,
+.search-book-section button:hover {
+  background-color: #0056b3;
+}
+
+.book-list-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-list-section li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-list-section li:last-child {
+  border-bottom: none;
+}
+
+.book-list-section button {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-list-section button.borrowed {
+  background-color: #ffc107;
+}
+
+.book-list-section button:hover {
+  background-color: #218838;
+}
+
+/* Navbar */
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10%;
+  max-width: auto;
+  margin: 0 auto;
+  background-color:green;
+}
+
+.logo {
+  border-radius: 50px;
+  height:50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Hover styles */
+.pages {
+  text-decoration: none;
+  color:white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.pages:hover {
+  color: #ffffff;
+  background: #000000 radial-gradient(circle, transparent 1%, #ff0000 1%) center/15000%;
+}
+
+.pages:active {
+  color: #ffffff;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  border-top: 2px solid black;
+  padding: 20px 10%;
+  margin-top:1px;
+  background-color: green;
+  color:black;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color:black;
+}
+
+.footerContainer .up {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  color:black;
+}
+
+.ftr-nav {
+  list-style: none;
+  color:black;
+}
+
+.ftr-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.ftr-logo .name {
+  padding: 10px;
+}
+
+.footerContainer .down {
+  margin-top: 20px;
+  border-top: 2px solid black;
+  padding-top: 20px;
+}
+
+.nav-head {
+  font-size:larger;
+  font-weight: 600;
+}
+
+.nav-head li {
+  color:black;
+}
+
+.ftr-nav a {
+  text-decoration: none;
+  color:white;
+}
+
+.ftr-nav a:hover {
+  color: #ff0000;
+}
+
+.box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.add-book-section {
+  background-color: #f5f5f5;
+}
+
+.book-list-section {
+  background-color: #e5e5e5;
+}
+
+.search-book-section {
+  background-color: #d5d5d5;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  /* For laptops and desktops */
+  .container {
+      max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* For mobile devices */
+  .container {
+      padding: 10px;
+  }
+  .container1 {
+      padding: 5px;
+  }
+  .menu li:not(:last-child) {
+      margin-right: 10px;
+  }
+  .pages {
+      padding: 5px;
+  }
+  .footerContainer .up {
+      padding: 15px 0;
+  }
+  .ftr-logo .name {
+      padding: 5px;
+  }
+}
